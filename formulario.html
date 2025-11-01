@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 class="titulo-formulario">Ingrese sus datos</h1>
+        <form class="formulario">
+            <div class="genero">
+                <label for="genero">Género</label>
+                <br>
+                <select name="Género" id="genero">
+                    <option value="">Selecciona un género</option>
+                    <option value="Niña">Niña</option>
+                    <option value="Niño">Niño</option>
+                </select>
+            </div>
+            <div class="nombre">
+                <label for="nombre">Nombre</label>
+                <br>
+                <input type="text" id="nombre">
+            </div>
+            <div class="edad">
+                <label for="edad">Edad</label>
+                <br>
+                <select name="Edad" id="edad">
+                    <option value="">Selecciona una edad</option>
+                    <option value="">De 2 a 4 años</option>
+                    <option value="">De 4 a 6 años</option>
+                    <option value="">De 6 a 9 años</option>
+                    <option value="">De 9 a 12 años</option>
+                    <option value="">De 12 a + años</option>
+                </select>
+            </div>
+            <div class="formulario-boton">
+                <input type="submit" class="submit-boton" value="Siguiente">
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
