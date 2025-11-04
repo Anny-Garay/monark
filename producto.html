@@ -4,12 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Producto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div class="producto">
         <h1 class="titulo-producto">Seleccione el producto</h1>
-        <a href="" class="producto-boton">Crear mensaje</a>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                <img src="/img/moana-flowers-16-monark-bicicleta-1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Monark</h5>
+                    <p class="card-text">BICICLETA MONARK MOANA FLOWERS ARO 16" AMARILLO<br>S/ 529.00</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="img/mickey-happy-16-monark-bicicleta-2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Monark</h5>
+                    <p class="card-text">BICICLETA MONARK MICKEY HAPPY ARO 16" NEGRO/BLANCO<br>S/ 529.00</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="img/the-amazing-spider-man-monark-bicicletas-3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Monark</h5>
+                    <p class="card-text">BICICLETA MONARK THE AMAZING SPIDER-MAN ARO 16" AZUL/ROJO<br>S/ 529.00</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="img/f5f2f385-16-stich-01.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Monark</h5>
+                    <p class="card-text">BICICLETA MONARK STITCH ARO 16" CELESTE<br>S/ 529.00</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="img/3fb8df38-12-moana-01.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Monark</h5>
+                    <p class="card-text">BICICLETA MONARK MOANA ARO 12" CELESTE<br>S/ 529.00</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                <img src="img/bicicleta-monark-minnie-party-aro-12-rosado-04.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Monark</h5>
+                    <p class="card-text">BICICLETA MONARK MINNIE PARTY ARO 12" ROSADO<br>S/ 529.00</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary d-block mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+            Crear mensaje
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLongTitle">Papa Noel tiene un <br> mensaje para ti</h2>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="window.location.href='precarga.html'">Crear mensaje</button>
+            </div>
+            </div>
+        </div>
+        </div>
     </div>
 </body>
 </html>

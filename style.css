@@ -61,9 +61,9 @@ select{
 }
 #nombre{
     margin-top: 10px;
-    width: 95%;
+    width: 100%;
     border-radius: 10px;
-    padding: 7px;
+    padding: 5px;
     border-width: 1px;
 }
 .edad{
@@ -95,6 +95,7 @@ select{
     justify-content: center;
 }
 .titulo-producto{
+    font-family: Arial, Helvetica, sans-serif;   
     text-align: center;
     margin-top: 120px;
 }
@@ -110,10 +111,37 @@ select{
     text-decoration: none;
     text-align: center;
 }
+button.btn.btn-primary{
+    margin: 40px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #085cd1;
+    font-size: 14px;
+}
 .producto-boton:hover{
     background-color: #074daf;
 }
 .producto-boton:active{
     transform: scale(0.9);
 }
-
+div.row.row-cols-1.row-cols-md-3.g-4{
+    margin: 40px 160px 10px;
+    text-align: center;
+}
+.modal-header{
+    justify-content: center;
+    text-align: center;
+    padding: 95px 80px 55px;
+    border: none;
+}
+.modal-footer{
+    justify-content: center;
+    padding: 10px 0px 20px;
+    border: none;
+}
+p.card-text{
+    font-size: 15px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
