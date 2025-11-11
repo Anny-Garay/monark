@@ -3,55 +3,77 @@ body{
 }
 
 /*********************************************************PORTADA*/
+.portada-body{
+    background-image: url(img/Inicio2.png); 
+    background-size: cover;/* Hace que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat;/* Evita que se repita */
+    background-position: center;/*La centrará*/
+}
 .portada{
     text-align: center;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     height: 700px;
     flex-direction: column;
 }
 .titulo-portada{
-    color: #085cd1;
+    color: #ffffff;
     font-weight: bolder;
 }
 .subtitulo-portada{
+    color: #ffffff;
     font-weight: lighter;
     margin-top: 0%;
 }
 .portada-boton{
-    padding: 11px 35px;
-    border-radius: 8px;
+    padding: 7px 85px;
+    border-radius: 25px;
     border: none;
-    background-color: #085cd1;
-    color: #ffffff;
-    font-size: 14px;
-    margin-top: 20px;
+    background-color: #f1b162;
+    color: #062b60;
+    font-size: 18px;
+    margin: 0px 0px 0px 66px;
     cursor: pointer; /*el cursor cambia a la manito (👆)*/
     text-decoration: none;
+    font-weight: 800;
+    box-shadow: -5px 7px 0px 0px;
 }
 .portada-boton:hover{
-    background-color: #074daf;
+    background-color: #fca73f;
 }
 .portada-boton:active{
     transform: scale(0.9);
 }
 /*********************************************************FORMULARIO*/
+.formulario-body{
+    background-image: url(img/Formulario3.png); 
+    background-size: cover;/* Hace que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat;/* Evita que se repita */
+    background-position: center;/*La centrará*/
+}
 .titulo-formulario{
     text-align: center;
     margin-top: 120px;
+    /*background-color: #1058d0;*/
+    color: #ffffff;
+    font-weight: 700;
 }
 .formulario{
     display: grid;
     justify-content: center;
-    margin-top: 85px;
+    margin-top: 20px;
     grid-template-columns: 330px;
+    color: #062b60;
+    font-weight: 700;
+    font-size: 18px;
 }
 select{
     margin-top: 10px;
     border-radius: 10px;
     padding: 7px;
     width: 100%;
+    border: 3px solid #062b60;
 }
 .genero{
     margin-bottom: 20px;
@@ -64,7 +86,7 @@ select{
     width: 100%;
     border-radius: 10px;
     padding: 5px;
-    border-width: 1px;
+    border: 3px solid #062b60;
 }
 .edad{
     margin-bottom: 50px;
@@ -73,23 +95,31 @@ select{
     text-align: center;
 }
 .submit-boton{
-    padding: 10px 20px;
-    border-radius: 8px;
+    padding: 7px 85px;
+    border-radius: 25px;
     border: none;
-    background-color: #085cd1;
-    color: #ffffff;
-    font-size: 14px;
+    background-color: #f1b162;
+    color: #062b60;
+    font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
     text-decoration: none;
+    font-weight: 800;
+    box-shadow: -5px 7px 0px 0px;
 }
 .submit-boton:hover{
-    background-color: #074daf;
+    background-color: #fca73f;
 }
 .submit-boton:active{
     transform: scale(0.9);
 }
 /*********************************************************PRODUCTO*/
+.producto-body{
+    background-image: url(img/Selección\ de\ bicis1.png); 
+    background-size: cover;/* Hace que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat;/* Evita que se repita */
+    background-position: center;/*La centrará*/
+}
 .producto{
     display: grid;
     justify-content: center;
@@ -98,32 +128,35 @@ select{
     font-family: Arial, Helvetica, sans-serif;   
     text-align: center;
     margin-top: 120px;
-}
-.producto-boton{
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-    background-color: #085cd1;
     color: #ffffff;
-    font-size: 14px;
-    margin: 20px 115px 0px 115px;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
+    font-weight: 700;
 }
 button.btn.btn-primary{
     margin: 40px;
-    padding: 10px;
-    border-radius: 8px;
+    padding: 7px 55px;
+    border-radius: 25px;
     border: none;
-    background-color: #085cd1;
-    font-size: 14px;
+    background-color: #f1b162;
+    color: #062b60;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 800;
+    box-shadow: -5px 7px 0px 0px;
 }
-.producto-boton:hover{
-    background-color: #074daf;
+button.btn.btn-primary:hover{
+    background-color: #fca73f;
 }
-.producto-boton:active{
+button.btn.btn-primary:active{
     transform: scale(0.9);
+}
+.modal-content{
+    background-image: url(img/crear\ mensaje\ 2.png);
+    background-size: cover;/* Hace que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat;/* Evita que se repita */
+    background-position: center;/*La centrará*/
+    border-radius: 50px;
 }
 div.row.row-cols-1.row-cols-md-3.g-4{
     margin: 40px 160px 10px;
@@ -132,7 +165,7 @@ div.row.row-cols-1.row-cols-md-3.g-4{
 .modal-header{
     justify-content: center;
     text-align: center;
-    padding: 95px 80px 55px;
+    padding: 227px 0px 55px;
     border: none;
 }
 .modal-footer{
@@ -146,6 +179,12 @@ p.card-text{
     font-weight: bold;
 }
 /*********************************************************PRECARGA*/
+.precarga-body{
+    background-image: url(img/Pantalla\ de\ carga2.png);
+    background-size: cover;/* Hace que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat;/* Evita que se repita */
+    background-position: center;/*La centrará*/
+}
 .subtitulo-precarga{
     font-weight: lighter;
     margin-top: 3%;
@@ -170,6 +209,7 @@ p.card-text{
     transform: scale(0.9);
 }
 /*********************************************************ANIMACIÓN*/
+/*
 .animacion{
     height: 100vh;
     display: flex;
@@ -177,7 +217,7 @@ p.card-text{
     align-items: center;
     padding: 0;
     margin: 0;
-    background: #112055;
+    background: #20388b;
     flex-direction: column;
 }
 svg {
@@ -220,6 +260,7 @@ body:after {
   bottom: 1vh;
   right: 1vw;
 }
+  */
 /*********************************************************VIDEO*/
 .video{
     text-align: center;
