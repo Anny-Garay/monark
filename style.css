@@ -4,7 +4,7 @@ body{
 
 /*********************************************************PORTADA*/
 .portada-body{
-    background-image: url(img/desktop/Inicio5.png); 
+    background-image: url('../img/desktop/inicio-2.png'); 
     background-size: 100% 100%;
     background-repeat: no-repeat;/* Evita que se repita */
     background-position: center;/*La centrará*/
@@ -12,7 +12,6 @@ body{
     min-height: 100vh
 }
 .portada{
-    text-align: center;
     display: flex;
     align-items: baseline;
     justify-content: center;
@@ -51,27 +50,43 @@ body{
 .portada-boton:active{
     transform: scale(0.9);
 }
-.bici-niño{
-    position: absolute;
-    right: 0;
-    margin: 20px 77px -98px;
-    width: 615px;
+.img-portada{
+    /*display: flex;*/
+    position: relative;
 }
-.bici-niña{
+.nieve-fondo img{
     position: absolute;
-    right: 0;
-    margin: 20px 605px -323px;
-    width: 500px;
+    height: 300px;
+    width: 100%;
+}
+.elementos img{
+    position: absolute;
+    width: 875px;
+    height: auto;
+    margin: 0;
+    bottom: -243px;
+    right: 1%;
+}
+.regalos img{
+    position: absolute;
+    width: 280px;
+    height: auto;
+    left: 4%;
+}
+.nieve-frente img{
+    position: absolute;
+    height: 275px;
+    width: 100%;
 }
 .logo{
     position: absolute;
-    right: 0;
+    left: 50%;
     bottom: 25px;
-    margin: 0px 745px;
+    transform: translateX(-50%);
 }
 /*********************************************************FORMULARIO*/
 .formulario-body{
-    background-image: url(img/desktop/Formulario1.png); 
+    background-image: url('../img/desktop/Formulario1.png'); 
     background-size: 100% auto;
     background-repeat: no-repeat;/* Evita que se repita */
     background-position: top center;/*La centrará*/
@@ -79,16 +94,17 @@ body{
 .fondo-blanco-paso1{
     background-color: #ffffff;
     width: 425px;
-    height: 455px;
+    height: 444px;
     margin: 50px auto;
     border-radius: 30px;
 }
 .fondo-blanco-paso2{
     background-color: #ffffff;
     width: 440px;
-    height: 510px;
+    min-height: 510px;
     margin: 50px auto;
     border-radius: 30px;
+    margin-top: 82px;
 }
 .titulo-formulario{
     text-align: start;
@@ -101,7 +117,7 @@ body{
 }
 .subtitulo-formulario{
     color: #3c434d;
-    font-size: 23px;
+    font-size: 19px;
     margin-bottom: 20px;
 }
 .formulario-paso1{
@@ -115,7 +131,7 @@ body{
 }
 .formulario-paso2{display: grid;
     justify-content: center;
-    margin-top: 125px;
+    /*margin-top: 125px;*/
     grid-template-columns: 330px;
     color: #165fc6;
     font-weight: 700;
@@ -123,7 +139,7 @@ body{
 }
 select{
     border-radius: 10px;
-    padding: 7px;
+    padding: 5px;
     width: 100%;
     border: 2px solid #165fc6;
 }
@@ -133,10 +149,10 @@ select{
 .nombre{
     margin-bottom: 10px;
 }
-#nombre{
+#nombre, #numero_compra {
     width: 100%;
     border-radius: 10px;
-    padding: 5px;
+    padding: 3px;
     border: 2px solid #165fc6;
 }
 .numero{
@@ -145,7 +161,7 @@ select{
 #numero{
     width: 100%;
     border-radius: 10px;
-    padding: 5px;
+    padding: 3px;
     border: 2px solid #165fc6;
 }
 .email{
@@ -154,7 +170,7 @@ select{
 #email{
     width: 100%;
     border-radius: 10px;
-    padding: 5px;
+    padding: 3px;
     border: 2px solid #165fc6;
 }
 .edad{
@@ -184,7 +200,8 @@ select{
     background-color: #f1b162;
     color: #062b60;
     font-size: 18px;
-    margin-top: 48px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     cursor: pointer;
     text-decoration: none;
     font-weight: 800;
@@ -197,8 +214,29 @@ select{
     transform: scale(0.9);
 }
 /*********************************************************PRODUCTO*/
+.paginacion svg {
+    width: 32px;
+}
+.paginacion {
+    text-align: center;
+}
+.text-sm.text-gray-700.leading-5.dark:text-gray-400{
+    display: none;
+}
+img.card-img-top {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    display: block;
+}
+.card-body{
+    width: 100%;
+    height: 185px;
+    object-fit: contain;
+    display: block;
+}
 .producto-body{
-    background-image: url(img/desktop/Selección\ de\ bicis1.png); 
+    background-image: url('../img/desktop/Seleccion-bicis2.png'); 
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: top center;
@@ -237,7 +275,7 @@ button.btn.btn-primary:active{
     --bs-btn-active-color: #062b60;
 }
 .modal-content{
-    background-image: url(img/desktop/crear\ mensaje\ 2.png);
+    background-image: url('../img/desktop/crear\ mensaje\ 2.png');
     background-size: cover;
     background-repeat: no-repeat;/* Evita que se repita */
     background-position: center;/*La centrará*/
@@ -265,7 +303,7 @@ p.card-text{
 }
 /*********************************************************PRECARGA*/
 .precarga-body{
-    background-image: url(img/desktop/Pantalla\ de\ carga1.png);
+    background-image: url('../img/desktop/Pantalla\ de\ carga1.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;/* Evita que se repita */
     background-position: top center;/*La centrará*/
@@ -353,138 +391,216 @@ p.card-text{
     flex-direction: column;
 }
 
-@media (max-width:480px) {
-/*********************************************************PORTADA*/
-.portada-body{
-    background-image: url(img/celular/Inicio3.png); 
-    background-size: 100% 100%;
-    background-repeat: no-repeat;/* Evita que se repita */
-    background-position: center;/*La centrará*/
-    background-attachment: fixed;
+@media (max-width:1000px) {
+    /*********************************************************PORTADA*/
+    .portada {
+        height: 370px;
+    }
+    .subtitulo-portada {
+        font-size: 30px;
+        margin-bottom: -15px;
+    }
+    .titulo-portada{
+        font-size: 55px;
+        margin-bottom: -3px;
+    }
+    .portada-boton{
+        font-size: 15px;
+        margin: 32px 0px 0px 75px;
+    }
+    .elementos img {
+        width: 600px;
+        right: 0%;
+    }
+    .regalos img {
+        width: 170px;
+        left: 3%;
+    }
+    .logo{
+        width: 190px;
+        height: auto;
+    }
+    /*********************************************************FORMULARIO*/
+    .formulario-body {
+        background-image: url(../img/celular/Formulario1.png);
+    }
+    .formulario-paso1{
+        margin-top: 90px;
+        font-size: 18px;
+    }
+    .titulo-formulario{
+        font-size: 35px;
+        margin-top: 43px;
+    }
+    .fondo-blanco-paso1{
+        width: 414px;
+        height: 420px;
+    }
+    .submit-boton{
+        font-size: 15px;
+    }
+    .formulario-paso2{
+        font-size: 18px;
+    }
+    .fondo-blanco-paso2{
+        width: 414px;
+        margin-top: 56px;
+    }
+    div.row.row-cols-1.row-cols-md-3.g-4 {
+    margin: 30px 25px 10px;
+    }
+    /*********************************************************PRODUCTO*/
+    .producto-body{
+        background-image: url('../img/celular/Seleccion-bicis1.png'); 
+    }
+    button.btn.btn-primary {
+        font-size: 15px;
+    }
+    /*********************************************************PRECARGA*/
+    .animacion {
+        margin-top: 30%;
+    }
+    
 }
-.portada {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 335px;
-    flex-direction: column;
-}
-.subtitulo-portada {
-    margin-top: 0%;
-    font-size: 30px;
-    margin-bottom: -7px;
-}
-.titulo-portada {
-    font-size: 40px;
-    margin-bottom: -2px;
-}
-.portada-boton{
-    padding: 7px 35px;
-    font-size: 16px;
-    margin: 29px 0px 0px 0px;
-}
-.bici-niño{
-    display: none;
-}
-.bici-niña{
-    display: none;
-}
-.logo{
-    display: none;
-}
-/*********************************************************FORMULARIO*/
-.formulario-body{
-    background-image: url(img/celular/Formulario1.png); 
-    background-size: cover;
-    background-repeat: no-repeat;/* Evita que se repita */
-    background-position: top center;/*La centrará*/
-}
-.fondo-blanco-paso1{
-    width: 362px;
-    height: 351px;
-}
-.fondo-blanco-paso2{
-    width: 362px;
-    height: 400px;
-}
-.formulario-paso1{
-    margin-top: 90px;
-    grid-template-columns: 295px;
-    font-size: 14px;
-}
-.formulario-paso2 {
-    margin-top: 82px;
-    grid-template-columns: 295px;
-    font-size: 14px;
-}
-.titulo-formulario {
-    margin-top: 23px;
-    margin-bottom: 10px;
-}
-.subtitulo-formulario {
-    font-size: 15px;
-}
-#nombre{
-    padding: 3px;
-}
-#numero{
-    padding: 3px;
-}
-#email{
-    padding: 3px;
-}
-#genero{
-    padding: 3px;
-}
-select{
-    padding: 3px;
-}
-.submit-boton {
-    padding: 7px 50px;
-    font-size: 16px;
-}
-/*********************************************************PRODUCTO*/
-.producto-body{
-    background-image: url(img/celular/Selección\ bicis1.png); 
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-attachment: fixed;
-}
-.titulo-producto {
-    margin-top: 75px;
-    font-size: 24px;
-}
-div.row.row-cols-1.row-cols-md-3.g-4 {
-    margin: 10px 70px 10px;
-}
-button.btn.btn-primary {
-    padding: 7px 50px;
-    font-size: 16px;
-}
-.modal-content {
-    margin: 0px 37px;
-}
-.modal-header {
-    padding: 170px 0px 50px;
-}
-.modal-footer {
-    padding: 0px 0px 15px;
-}
-/*********************************************************PRECARGA*/
-.precarga-body{
-    background-image: url(img/celular/Pantalla\ de\ carga1.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;/* Evita que se repita */
-    background-position: top center;/*La centrará*/
-    background-attachment: fixed;
-}
-.subtitulo-precarga {
-    margin-top: 2%;
-}
-/*********************************************************ANIMACIÓN*/
-.animacion{
-    margin-top: 50%;
-}  
+
+@media (max-width:600px) {
+    /*********************************************************PORTADA*/
+    .portada-body{
+        background-image: url('../img/celular/inicio-3.png'); 
+        background-size: 100% 100%;
+        background-repeat: no-repeat;/* Evita que se repita */
+        background-position: center;/*La centrará*/
+        background-attachment: fixed;
+    }
+    .portada {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 335px;
+        flex-direction: column;
+    }
+    .subtitulo-portada {
+        margin-top: 0%;
+        font-size: 30px;
+        margin-bottom: -7px;
+    }
+    .titulo-portada {
+        font-size: 40px;
+        margin-bottom: -2px;
+    }
+    .portada-boton{
+        padding: 7px 35px;
+        font-size: 16px;
+        margin: 29px 0px 0px 0px;
+    }
+    .nieve-fondo img{
+        display: none;
+    }
+    .elementos img{
+        display: none;
+    }
+    .regalos img{
+        display: none;
+    }
+    .nieve-frente img{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    /*********************************************************FORMULARIO*/
+    .formulario-body{
+        background-image: url('../img/celular/Formulario1.png'); 
+        background-size: cover;
+        background-repeat: no-repeat;/* Evita que se repita */
+        background-position: top center;/*La centrará*/
+    }
+    .fondo-blanco-paso1{
+        width: 362px;
+        height: 351px;
+    }
+    .fondo-blanco-paso2{
+        width: 362px;
+        min-height: 400px;
+    }
+    .formulario-paso1{
+        margin-top: 115px;
+        grid-template-columns: 295px;
+        font-size: 14px;
+    }
+    .formulario-paso2 {
+        margin-top: 82px;
+        grid-template-columns: 295px;
+        font-size: 14px;
+    }
+    .titulo-formulario {
+        margin-top: 23px;
+        margin-bottom: 10px;
+    }
+    .subtitulo-formulario {
+        font-size: 15px;
+    }
+    #nombre{
+        padding: 3px;
+    }
+    #numero{
+        padding: 3px;
+    }
+    #email{
+        padding: 3px;
+    }
+    #genero{
+        padding: 3px;
+    }
+    select{
+        padding: 3px;
+    }
+    .submit-boton {
+        padding: 7px 50px;
+        font-size: 16px;
+    }
+    /*********************************************************PRODUCTO*/
+    .producto-body{
+        background-image: url('../img/celular/Seleccion-bicis1.png'); 
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-attachment: fixed;
+    }
+    .titulo-producto {
+        margin-top: 75px;
+        font-size: 24px;
+    }
+    div.row.row-cols-1.row-cols-md-3.g-4 {
+        margin: 10px 70px 10px;
+    }
+    button.btn.btn-primary {
+        padding: 7px 50px;
+        font-size: 16px;
+    }
+    .modal-content {
+        margin: 0px 37px;
+    }
+    .modal-header {
+        padding: 170px 0px 10px;
+    }
+    .modal-footer {
+        padding: 0px 0px 15px;
+    }
+    /*********************************************************PRECARGA*/
+    .precarga-body{
+        background-image: url('../img/celular/Pantalla\ de\ carga1.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;/* Evita que se repita */
+        background-position: top center;/*La centrará*/
+        background-attachment: fixed;
+    }
+    .subtitulo-precarga {
+        margin-top: 2%;
+    }
+    /*********************************************************ANIMACIÓN*/
+    .animacion{
+        margin-top: 50%;
+    }
 }
